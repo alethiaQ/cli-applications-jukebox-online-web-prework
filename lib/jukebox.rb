@@ -32,8 +32,8 @@ def play(songs)
   input = gets.chomp
   if songs.include? input 
     puts "Playing #{songs.find { |track| track == input}}"
-  elsif input.to_i > 
-  
+  elsif input.to_i > 0 && input.to_i <= songs.length
+    
 end
 
 def exit_jukebox 
