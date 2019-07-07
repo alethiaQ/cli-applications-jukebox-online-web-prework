@@ -28,17 +28,10 @@ end
 
 
 def play(songs)
-  temp_arr = []
-  songs.each_with_index do |item, index|
-    temp_arr << {"#{index +1 }" => "#{item}"}
-  end
-  puts "Please enter a song name or number: "
+  puts "Please enter a song name or number:"
   input = gets.chomp
-  if temp_arr.include? input
-    puts "Playing #{input}"
-  else 
-    puts "Invalid input, please try again"
-  end
+  if songs.include? input 
+    puts "Playing "
   
 end
 
