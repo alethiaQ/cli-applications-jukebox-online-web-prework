@@ -45,6 +45,7 @@ end
 
 def run 
   help 
+  
   puts "Please enter a command:"
   command = gets.chomp
   case command
@@ -54,5 +55,6 @@ def run
       list(songs)
       when "play"
         play(songs)
+        
         
 end
