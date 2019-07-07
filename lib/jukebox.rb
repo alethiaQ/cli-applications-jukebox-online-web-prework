@@ -45,7 +45,7 @@ end
 
 def run 
   help 
-  
+  loop do 
   puts "Please enter a command:"
   command = gets.chomp
   case command
@@ -55,6 +55,9 @@ def run
       list(songs)
       when "play"
         play(songs)
-        
-        
+        when "exit"
+          exit_jukebox
+          break 
+        end
+      end
 end
