@@ -32,6 +32,7 @@ def play(songs)
   input = gets.chomp
   if songs.include? input 
     puts "Playing #{songs.find { |track| track == input}}"
+  elsif input.to_i > 
   
 end
 
