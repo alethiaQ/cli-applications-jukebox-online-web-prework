@@ -33,7 +33,10 @@ def play(songs)
   if songs.include? input 
     puts "Playing #{songs.find { |track| track == input}}"
   elsif input.to_i > 0 && input.to_i <= songs.length
-    puts "Playing #{songs[input - 1] "  
+    puts "Playing #{songs[input.to_i - 1]}"
+  else 
+    puts "Invalid input, please try again"
+  end 
 end
 
 def exit_jukebox 
